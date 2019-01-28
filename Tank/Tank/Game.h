@@ -11,5 +11,14 @@ public:
 
 private:
 	HWND m_hWnd;                      //窗口
+
+//游戏绘图处理
+//负责绘画游戏中的对象
+	void GameRunDraw();
+	//输出fps
+	void DrawFps(Graphics &gh);
+
+	//记录游戏每秒多少帧
+	int m_fps{ 0 };
 };
 
